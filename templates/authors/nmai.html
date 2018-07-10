@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}
+  {% if author.name %}
+    {{ author.name }}, Author
+  {% else %}
+    Author ID: {{ author.id }}
+  {% endif %}
+{% endblock %}
+{% block content %}
+<div class = "section" align = "center">
+	<img src="/img/authors/nmai/nhan.jpg" width= "20" alt="nhan mai">
+	<b>{{ message }}<b>
+</div>
+<div align = "center">
+	<p>I like Dragon Ball saga so I posted a video of Goku using Ultra Instinct.</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/z8dvAaNYk_U" frameborder="0" allowfullscreen></iframe>
+<div>
+
+
+{% endblock %}
